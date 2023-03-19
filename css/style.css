@@ -30,6 +30,7 @@
     color: transparent;
     font-weight: 900;
     animation: shine 50s infinite;
+    filter: hue-rotate(30deg) brightness(80%);
   }
   
   @keyframes shine {
