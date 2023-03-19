@@ -23,8 +23,6 @@
     color: transparent;
     font-weight: 900;
     animation: shine 50s infinite;
-    font-family:'frozen';
-    letter-spacing: 1rem;
   }
   
   @keyframes shine {
