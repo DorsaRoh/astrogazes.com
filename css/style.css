@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
 
-  /*title */
+
   body{
     width: 100%;
     height: 100vh;
@@ -11,15 +11,8 @@
     align-items: center;
     background: #f7f7f7;
   }
-  span{
-    margin: 0 15px;
-    line-height: .7;
-    text-shadow: 0 0 2px rgba(0, 0, 0, .45);
-    animation: span 3s ease-in infinite alternate;
-  }
 
-
-  
+  /* TITLE */
   
   h6 {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg");
@@ -30,13 +23,21 @@
     color: transparent;
     font-weight: 900;
     animation: shine 50s infinite;
-    filter: hue-rotate(30deg) brightness(80%);
+    font-family:'frozen';
+    letter-spacing: 1rem;
   }
   
   @keyframes shine {
     0% {background-position: -100%;}
     100% {background-position: 100%;}
   }
+
+
+@font-face {
+	font-family:'frozen'; 
+	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+
 
   h1 {
     top: 50%;
