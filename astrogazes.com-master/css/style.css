@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  /*title */
+  body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+  }
+  span{
+    margin: 0 15px;
+    line-height: .7;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+    animation: span 3s ease-in infinite alternate;
+  }
+
+
+  
+  
+  h6 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg");
+    -webkit-background-clip: text;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    font-weight: 900;
+    animation: shine 50s infinite;
+  }
+  
+  @keyframes shine {
+    0% {background-position: -100%;}
+    100% {background-position: 100%;}
+  }
+
+  h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 20vw;
+    margin: 0;
+    font-family: 'frozen', serif;
+    font-weight: 700;
+  }
+  
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+      
+    @media(max-width: 600px){ transform: scale(.65); }
+  }
+  .letter{
+    display: inline-flex;
+    height: 25px;
+    width: 200px;
+    /* border: 2.5px solid #FF1EAD; */
+    border: 2.35px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow:
+      0 0 2px rgba(0, 0, 0, .75),
+      inset 0 0 2px rgba(0, 0, 0, .45);
+  
+    animation: letter 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes letter {
+    0%,30%{ width: 27px; }
+    70%,100%{ width: 30vw; }
+  }
+
+
+  /*fade in, turn left, etc.. animations*/
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+
+  .top-text {
+    text-align:center;
+    font-family: 'General Sans';
+    padding-bottom:40px;
+    min-width: 300px;
+  }
+
+  .toptextandgrid{
+    margin: 10%;
+    
+  }
+  
+
+
+/* NASA APOD*/
+.container{
+  margin:10%;
+  font-family: 'General Sans';
+}
+  
+
+
+
+  /* IMAGE GRID */
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .grid {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+

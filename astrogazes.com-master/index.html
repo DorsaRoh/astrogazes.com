@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://github.com/DorsaRoh/astrogazes/blob/master/assets/descr/logo.png?raw=true">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    
+    <title>AstroGazes</title>
+    <link href="css\style.css" rel="stylesheet" type="text/css" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+<div class ="toptextandgrid">
+    <div class="top-text">
+      <h6 contenteditable data-heading="Frozen" style="font-size:calc(7vw + 1vw)">
+        ASTRO GAZES
+      </h6>
+        
+        <p style="font-size:calc(2vw + 1vw)">The all-encompassing space resource.</p>
+        <p style="font-size:calc(1vw + 0.5vw)">For the best experience, please use a laptop.</p>
+        
+      </div>
+
+    <script>
+		ScrollReveal().reveal(".top-text", {
+        duration: 1500,
+        origin: "left",
+        distance: "300px",
+        easing: "ease-in-out"
+        });
+	</script>
+
+  
+    
+    <!-- Photo Grid -->
+    <div class="grid"> 
+      <div class="column">
+        <img src="assets/pillarsofcreation.jpg" style="width:100%">
+        <img src="assets/jwststars.jpg" style="width:100%">
+      </div>
+
+      <div class="column">
+        <img src="assets/cosmiccliffs.jpg" style="width:100%">
+        <img src="assets/mysticmountain.jpg" style="width:100%">
+        <img src="assets/southernringnebula.jpg" style="width:100%">
+        <img src="assets/jwstgalaxy.jpg" style="width:100%">
+      </div> 
+
+
+      <div class="column">
+        <img src="assets/jwst.jpg" style="width:100%">
+        <img src="assets/hubblesunflower.jpg" style="width:100%">
+        <img src="assets/jwstchameleon.jpg" style="width:100%">
+        <img src="assets/phantomgalaxy.jpg" style="width:100%">
+      </div>
+
+
+      <div class="column">
+        <img src="assets/cartwheelgalaxy.webp" style="width:100%">
+        <img src="assets/neptunerings.png" style="width:100%">
+        <img src="assets/wolfrayet.jpg" style="width:100%">
+        <img src="assets/jwstjupiter.png" style="width:100%">
+        <img src="assets/nasaspirals.jpg" style="width:100%">
+      </div>
+    </div>
+</div>
+
+<script>
+    ScrollReveal().reveal(".grid", {
+        duration: 1500,
+        origin: "bottom",
+        distance: "100px",
+        easing: "cubic-bezier(.37,.01,.74,1)",
+        opacity: 0.3,
+        scale: 0.5
+        });
+</script>
+
+<!-- NASA APOD -->
+<br></br>
+    <div class="container" style="font-size:calc(0.8vw + 1vw)">
+        <!-- Section: Intro -->
+        <section class="text-center mb-4">
+          <h4 class="mb-4" style="font-size:calc(2vw + 2vw)">
+            <strong
+              >Astronomy Picture of the Day:  <u id="intro-date"></u></strong
+            >
+          </h4>
+      
+          <p>
+            Each day a different image or photograph of our fascinating universe
+            is featured, along with a brief explanation written by a professional
+            astronomer.
+          </p>
+        </section>
+        <!-- Section: Intro -->
+      
+        <!-- Section: Demo -->
+        <section class="mb-4">
+          <!-- Section: Date -->
+          <section class="mb-4">
+            <!-- Datepicker -->
+            <div
+              class="form-outline datepicker"
+              data-mdb-toggle-button="true"
+              data-mdb-format="yyyy-mm-dd"
+              id="date-picker"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="wrapper-date"
+                data-mdb-toggle="datepicker"
+                value=""
+              />
+              <label for="exampleDatepicker1" class="form-label"
+                >Select a date</label
+              >
+            </div>
+          </section>
+          <!-- Section: Date -->
+      
+          <div class="row">
+            <div class="col-md-8 mb-4 mb-md-0">
+              <!-- Section: Media -->
+              <section id="wrapper-media" class=""></section>
+              <!-- Section: Media -->
+            </div>
+      
+            <div class="col-md-4 mb-4 mb-md-0" style="float:right">
+              <!-- Section: Description -->
+              <section class="">
+                <h5 id="wrapper-title"></h5>
+                <p class="text-muted mb-2">
+                  Copyright: <span id="wrapper-copyright"></span>
+                </p>
+                <p id="wrapper-explanation"></p>
+              </section>
+              <!-- Section: Description -->
+            </div>
+          </div>
+        </section>
+        <!-- Section: Demo -->
+        
+        <hr class="my-5">
+      
+        <!-- Section: Credits -->
+        <section class="">
+          <div class="row">
+            <div class="col-md-7 mb-4 mb-md-0">
+              <p>
+                <a href="#">AstroGazes.com</a> uses the 
+                <a
+                  href="https://api.nasa.gov/api.html#authentication"
+                  target="_blank"
+                  >NASA APOD API</a> and the <a
+                  href="https://mdbootstrap.com/docs/standard/"
+                  target="_blank">MDBootstrap UI KIT. </a>
+                  Images delivered by NASA, all rights reserved.
+              </p>
+
+      
+            </div>
+    
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Credits -->
+      </div>
+      <!-- End-->
+  
+    <script>
+		ScrollReveal().reveal(".container", {
+        duration:1000,
+        origin: "left",
+        distance: "300px",
+        easing: "ease-in-out"
+        });
+	</script>
+
+      <!-- MDB -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Custom scripts -->
+      <script type="text/javascript">
+        // Main call
+  function nasaRequest() {
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let data = JSON.parse(this.responseText);
+  
+        // Data from NASA API json
+        let copyright = data["copyright"];
+        let date = data["date"];
+        let explanation = data["explanation"];
+        let hdurl = data["hdurl"];
+        let media_type = data["media_type"];
+        let title = data["title"];
+        let url = data["url"];
+  
+        // HTML markup for images and videos
+        let imageType = `
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img id="wrapper-image" src="" class="w-100" />
+            <a id="wrapper-hdurl" href="" target="_blank">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+          `;
+
+  
+        // Static elements
+        document.getElementById("wrapper-title").innerHTML = title;
+        document.getElementById(
+          "wrapper-explanation"
+        ).innerHTML = explanation;
+        document.getElementById("wrapper-copyright").innerHTML = copyright;
+        document.getElementById("intro-date").innerHTML = date;
+  
+        // If statement for images/videos
+        if (media_type === "video") {
+          document.getElementById("wrapper-media").innerHTML = videoType;
+          document.getElementById("wrapper-video").src = url;
+        } else {
+          document.getElementById("wrapper-media").innerHTML = imageType;
+          document.getElementById("wrapper-image").src = url;
+          document.getElementById("wrapper-hdurl").href = hdurl;
+        }
+      }
+    };
+    // Acessing a value from the date picker
+    let datepicker_date = document.getElementById("wrapper-date").value;
+    // NASA API link
+    let queryUrl = "https://api.nasa.gov/planetary/apod?";
+    // API KEY
+    let queryKey = "api_key=hk02zTSVbnLaea26fL8eya8DpPHy3JhvWbTB3TjB&";
+    // Selected date
+    let queryDate = "date=" + datepicker_date + "&";
+    // Full query
+    let queryFull = queryUrl + queryKey + queryDate;
+  
+    xmlhttp.open("GET", queryFull, true);
+    xmlhttp.send();
+  }
+  
+  // Datepicker init
+  const datePicker = document.getElementById("date-picker");
+  // Call nasaRequest on date change
+  datePicker.addEventListener("dateChange.mdb.datepicker", (e) => {
+    nasaRequest();
+  });
+  
+  // Initial call on page load
+  nasaRequest().onload;
+</script>
+    
+    </body>
+
+</html>
