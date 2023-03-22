@@ -22,7 +22,7 @@
     /* space title 
     background: url("https://i.postimg.cc/FHjJGTQ0/Screenshot-2023-03-21-211056.png");
     */
-    
+    background-clip: text;
     -webkit-background-clip: text;
     background-size: contain;
     width: 100%;
