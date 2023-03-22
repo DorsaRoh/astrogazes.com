@@ -1,5 +1,5 @@
 <h1 align="center">
-AstroGazes : https://astrogazes.com/
+Astro Gazes : https://astrogazes.com/
 </h1>
 
 To-do: 
