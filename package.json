@@ -5,5 +5,8 @@
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "repository": "https://github.com/mdbootstrap/mdb-ui-kit.git",
   "author": "MDBootstrap",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
 }

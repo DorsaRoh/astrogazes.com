@@ -19,11 +19,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Space+Mono:wght@700&family=Syne:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="aos.js"></script>
 
     <title>Astro Gazes</title>
     <link href="css\style.css" rel="stylesheet" type="text/css" />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+
 </head>
 <body>
 
@@ -32,22 +34,13 @@
 
 <div class ="toptextandgrid">
     <div class="top-text">
-      <h6 style="font-size:calc(7vw + 1vw)">
+      <h6 style="font-size:calc(7vw + 1vw)" data-aos="fade-up" data-aos-duration="700">
         ASTRO GAZES
       </h6>
         
-        <p style="font-size:calc(2vw + 1vw)">The all-encompassing space resource.</p>
+        <p style="font-size:calc(2vw + 1vw)" data-aos="fade-up" data-aos-duration="1150">The all-encompassing space resource.</p>
         
       </div>
-
-    <script>
-		ScrollReveal().reveal(".top-text", {
-        duration: 1500,
-        origin: "left",
-        distance: "300px",
-        easing: "ease-in-out"
-        });
-	</script>
 
   
     
@@ -57,7 +50,7 @@
       <!-- column 1-->
       <div class="column">
 
-        <div class="img-container">
+        <div data-aos="fade-up" data-aos-duration="1200" class="img-container">
           <img src="assets/pillarsofcreation.jpg" style="width:100%" class="image">
           <div class="overlay">
             <div class="text">The Pillars of Creation in mid-infrared light.
@@ -68,7 +61,7 @@
           </div>
         </div>
 
-        <div class="img-container">
+        <div data-aos="fade-up" data-aos-duration="1100" class="img-container">
           <img src="assets/jwststars.jpg" style="width:100%" class="image">
           <div class="overlay">
             <div class="text">The deepest, sharpest infrared view of the universe to date: Webb's First Deep Field, by the James Webb Space Telescope.
@@ -107,16 +100,6 @@
     </div>
 </div>
 
-<script>
-    ScrollReveal().reveal(".grid", {
-        duration: 1500,
-        origin: "bottom",
-        distance: "100px",
-        easing: "cubic-bezier(.37,.01,.74,1)",
-        opacity: 0.3,
-        scale: 0.5
-        });
-</script>
 
 <!-- NASA APOD -->
 <br></br>
