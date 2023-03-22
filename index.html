@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Space+Mono:wght@700&family=Syne:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Astro Gazes</title>
     <link href="css\style.css" rel="stylesheet" type="text/css" />
@@ -308,6 +309,11 @@ datePicker.addEventListener("dateChange.mdb.datepicker", (e) => {
 
 // Initial call on page load
 nasaRequest().onload;
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
     
     </body>
