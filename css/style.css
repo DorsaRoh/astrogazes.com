@@ -15,6 +15,11 @@
   /* TITLE */
   
   h6 {
+    /* space title 
+    background: url("https://i.postimg.cc/FHjJGTQ0/Screenshot-2023-03-21-211056.png");
+    /*
+    
+    /* blue title*/
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg");
     -webkit-background-clip: text;
     background-size: contain;
